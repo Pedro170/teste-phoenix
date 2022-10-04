@@ -1,0 +1,166 @@
+@media ( max-width: 40rem ) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .header #toggle {
+    display: flex;
+  }
+  
+  .header {
+    background: #fff;
+    box-shadow: 0px 10px 22px -10px rgba(0, 0, 0, .2);
+    padding-left: .5rem;
+  }
+
+  .header nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 260px;
+    padding: 1rem;
+    border-bottom-left-radius: .5rem;
+    background: #fff;
+    box-shadow: -6px 10px 22px -10px rgba(0, 0, 0, .2);
+    z-index: 1000;
+    display: none;
+  }
+
+  header nav.active {
+    display: block;
+  }
+
+  .header nav ul {
+    display: block;
+  }
+
+  .header nav ul li:nth-child(1) {
+    border-top: solid 2px #515151AD;
+  }
+
+  .header nav ul li {
+    border-bottom: solid 2px #515151AD;
+  }
+
+  /* banner */
+
+  .container-banner .banner {
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .container-banner .banner h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  #empresa {
+    padding: 1rem;
+  }
+
+  .empresa .informacoes {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  .empresa .informacoes .item-info {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 10px 22px -3px #000000;
+    transition: .3s;
+  }
+
+  .empresa .informacoes .item-info.bloco {
+    row-gap: .5rem;
+  }
+
+  .empresa .informacoes .item-info img {
+    width: 100%;
+  }
+
+  .empresa .informacoes .item-info  p {
+    font-size: .875rem;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .empresa .informacoes .item-info i {
+    font-size: 2rem;
+  }
+
+  /* Serviços */
+
+  .servicos {
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .servicos .title-servicos .title i {
+    font-size: 2rem;
+    color: var(--type-first);
+  }
+
+
+  .servicos .grid-servicos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    overflow: auto;
+  }
+  
+  .servicos .grid-servicos .grid-item-servico {
+    padding: .5rem;
+  }
+
+  .servicos .grid-servicos .grid-item-servico h4 {
+    font-size: 1rem;
+  }
+
+  /* Área de atuação */
+  #areaatuacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-areaatuacao {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .grid-areaatuacao .grid-item-areaatuacao {
+    height: 160px;
+  }
+  
+  /* Contato */
+
+  .contato {
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 700px;
+  }
+
+  .direitos {
+    padding: 1rem 0;
+    font-size: .875rem;
+    text-align: center;
+  }
+
+  .direitos p {
+    width: 80%;
+  }
+}
+
+@media ( max-width: 320px ) {
+  .btn-agend {
+    width: 300px;
+    font-size: 1rem;
+  }
+}
